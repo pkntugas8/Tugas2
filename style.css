@@ -1,7 +1,16 @@
-  img {
-      width:250px; 
-      height:120px;
-    }
+ img {
+    max-width: 100%; /* Membatasi lebar maksimum gambar hingga 100% dari elemen induknya */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghapus margin bawaan untuk gambar */
+    margin: 0 auto; /* Menengahkan gambar jika diperlukan */
+}
+
+/* Gaya opsional untuk pembatas */
+.responsive-img-container {
+    max-width: 500px; /* Batas maksimum untuk gambar */
+    margin: 0 auto; /* Menengahkan container gambar */
+    overflow: hidden; /* Pastikan elemen berlebih tersembunyi */
+}
 /* Style dasar */
 body {
     font-family: Arial, sans-serif;
@@ -72,6 +81,21 @@ footer {
 
 /* Media Queries untuk Responsivitas */
 @media screen and (max-width: 768px) {
+
+img {
+    max-width: 100%; /* Membatasi lebar maksimum gambar hingga 100% dari elemen induknya */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghapus margin bawaan untuk gambar */
+    margin: 0 auto; /* Menengahkan gambar jika diperlukan */
+}
+
+/* Gaya opsional untuk pembatas */
+.responsive-img-container {
+    max-width: 500px; /* Batas maksimum untuk gambar */
+    margin: 0 auto; /* Menengahkan container gambar */
+    overflow: hidden; /* Pastikan elemen berlebih tersembunyi */
+}
+  
     .navbar h1 {
         font-size: 1.2rem; /* Perkecil ukuran teks di navbar */
     }
@@ -91,6 +115,21 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
+img {
+    max-width: 100%; /* Membatasi lebar maksimum gambar hingga 100% dari elemen induknya */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghapus margin bawaan untuk gambar */
+    margin: 0 auto; /* Menengahkan gambar jika diperlukan */
+}
+
+/* Gaya opsional untuk pembatas */
+.responsive-img-container {
+    max-width: 500px; /* Batas maksimum untuk gambar */
+    margin: 0 auto; /* Menengahkan container gambar */
+    overflow: hidden; /* Pastikan elemen berlebih tersembunyi */
+}
+  
     .navbar h1 {
         font-size: 1rem; /* Teks lebih kecil untuk layar sangat kecil */
     }
