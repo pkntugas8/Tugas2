@@ -1,0 +1,53 @@
+/* Membuat setiap bab di halaman yang berbeda */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style untuk setiap bab, tampilkan satu per satu */
+.page {
+    display: none;  /* Sembunyikan setiap bab */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* CSS untuk footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
